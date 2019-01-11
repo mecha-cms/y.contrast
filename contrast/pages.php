@@ -1,7 +1,7 @@
 <?php static::header(); ?>
 <article class="archive">
   <header>
-    <h1><?php echo $language->posts; ?></h1>
+    <h1><?php echo $page->title; ?></h1>
   </header>
   <?php $format = $state->date_format; foreach ($pages as $page): ?>
   <div>

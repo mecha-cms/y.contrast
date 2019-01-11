@@ -3,7 +3,7 @@ title: Contrast
 description: Contrast is a simple blog theme with a nice clean design.
 link: https://github.com/niklasbuschmann/contrast
 author: Taufik Nurrohman
-version: 1.0.0
+version: 1.0.1
 ...
 
 This theme is based on a _Jekyll_ theme with the same name.
@@ -12,12 +12,13 @@ This theme is based on a _Jekyll_ theme with the same name.
 
 Custom settings available in the `state` folder starting from the location of this file.
 
-- To hide the site header, set the `header` state value to `false`.
-- To hide the site navigation, set the `nav` state value to `false`.
-- To hide the site links, set the `links` state value to `false`.
-- Limit the maximum links displayed in site navigation by setting the `nav` state value as numbers to describe the limit.
-- Set your custom links URL in the `links` state. There are `envelope` and `github` item available.
-- To enable dark mode, set the `dark` state to `true`.
+ - To hide the site header, set the `header` state value to `false`.
+ - To hide the site navigation, set the `nav` state value to `false`.
+ - To hide the site links, set the `links` state value to `false`.
+ - Limit the maximum links displayed in site navigation by setting the `nav` state value as numbers to describe the limit.
+ - Set your custom links URL in the `links` state. There are `envelope` and `github` item available.
+ - To enable dark mode, set the `dark` state to `true`.
+ - There are three custom `style` available: `default`, `contrast` and `minimal`.
 
 ### Embedded Content
 

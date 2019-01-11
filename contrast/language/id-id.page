@@ -2,10 +2,6 @@
 type: YAML
 ...
 
-post: Posting
-posts: Posting
-
-
 #. For `panel` extension
 is_dark: Gelap
 show_header: Tajuk

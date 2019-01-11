@@ -2,10 +2,6 @@
 type: YAML
 ...
 
-post: Post
-posts: Posts
-
-
 #. For `panel` extension
 is_dark: Dark
 show_header: Header
