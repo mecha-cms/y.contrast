@@ -1,0 +1,18 @@
+---
+type: YAML
+...
+
+post: Posting
+posts: Posting
+
+
+#. For `panel` extension
+is_dark: Gelap
+show_header: Tajuk
+show_nav: Navigasi
+show_links: Tautan
+the_date_format: Format Tanggal
+the_links:
+  envelope: Surel
+  github: GitHub
+  rss: RSS
