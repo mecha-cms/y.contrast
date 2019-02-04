@@ -1,9 +1,9 @@
 ---
 title: Contrast
 description: Contrast is a simple blog theme with a nice clean design.
-link: https://github.com/niklasbuschmann/contrast
+link: 'https://github.com/niklasbuschmann/contrast'
 author: Taufik Nurrohman
-version: 1.0.1
+version: 1.0.3
 ...
 
 This theme is based on a _Jekyll_ theme with the same name.
