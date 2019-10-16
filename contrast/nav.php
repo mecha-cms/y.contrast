@@ -1,7 +1,7 @@
 <?php if ($site->is('home')): ?>
-  <span><?= $language->home; ?></span>
+  <span><?= i('Home'); ?></span>
 <?php else: ?>
-  <a href="<?= $url; ?>"><?= $language->home; ?></a>
+  <a href="<?= $url; ?>"><?= i('Home'); ?></a>
 <?php endif; ?>
 <?php $i = 2; $limit = is_int($state->skin->nav) ? $state->skin->nav : 4; ?>
 <?php foreach ($links as $link): ?>

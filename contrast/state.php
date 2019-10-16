@@ -13,8 +13,14 @@ return [
         'header' => true,
         'nav' => 4,
         'links' => [
-            'envelope' => 'mailto:you@example.com',
-            'github' => 'https://github.com/mecha-cms/shield.contrast'
+            'envelope' => [
+                'title' => 'Email',
+                'link' => 'mailto:you@example.com'
+            ],
+            'github' => [
+                'title' => 'GitHub',
+                'link' => 'https://github.com/mecha-cms/shield.contrast'
+            ]
         ],
         'date_format' => '%B %d, %Y',
         'dark' => false,

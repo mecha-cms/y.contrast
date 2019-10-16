@@ -14,17 +14,7 @@ $GLOBALS['links'] = map(Pages::from(PAGE)->is(function($v) use($state) {
 });
 
 if (State::get('x.panel') !== null && isset($_['path']) && $_['path'] === '/.state') {
-    Language::set([
-        'field-description-dark-mode' => 'Dark mode',
-        'field:skin-style' => [
-            'lot' => [
-                'contrast' => 'Contrast',
-                'default' => 'Default',
-                'minimal' => 'Minimal'
-            ]
-        ]
-    ]);
-    Hook::set('set', function() use($language, $state) {
+    Hook::set('set', function() use($state) {
         $GLOBALS['_']['lot']['desk']['lot']['form']['lot'][1]['lot']['tabs']['lot']['skin'] = [
             'lot' => [
                 'fields' => [
@@ -34,10 +24,15 @@ if (State::get('x.panel') !== null && isset($_['path']) && $_['path'] === '/.sta
                             'type' => 'Item',
                             'name' => 'state[skin][style]',
                             'value' => $state->skin->style,
-                            'lot' => (array) Language::get('field:skin-style.lot'),
+                            'lot' => [
+                                'contrast' => 'Contrast',
+                                'default' => 'Default',
+                                'minimal' => 'Minimal'
+                            ],
                             'stack' => 10
                         ],
-                        // An unchecked checkbox must generate a `false` value
+                        // An unchecked checkbox must generate a `false` value, so we put
+                        // a hidden input with the same name as the checkbox input
                         'dark-false' => [
                             'type' => 'Hidden',
                             'name' => 'state[skin][dark]',
@@ -46,8 +41,9 @@ if (State::get('x.panel') !== null && isset($_['path']) && $_['path'] === '/.sta
                         'dark-true' => [
                             'type' => 'Toggle',
                             'title' => "",
-                            'description' => $language->fieldDescriptionDarkMode,
+                            'description' => 'Set dark mode by default. This option will give no effect if your current browser has support of CSS <em>prefers-color-scheme</em>.',
                             'name' => 'state[skin][dark]',
+                            'alt' => 'Dark mode',
                             'value' => $state->skin->dark,
                             'stack' => 20
                         ]
