@@ -1,11 +1,11 @@
-<?php static::header(); ?>
+<?= self::before(); ?>
 <article>
   <header>
-    <h1><a href="<?php echo $page->link ?: $page->url; ?>"><?php echo $page->title; ?></a></h1>
+    <h1><a href="<?= $page->link ?: $page->url; ?>"><?= $page->title; ?></a></h1>
     <?php if ($site->has('parent')): ?>
-    <time datetime="<?php echo $page->time->ISO8601; ?>"><?php echo $page->time($state->date_format); ?></time>
+    <time datetime="<?= $page->time->ISO8601; ?>"><?= $page->time($state->skin->date_format); ?></time>
     <?php endif; ?>
   </header>
-  <div><?php echo $page->content; ?></div>
+  <div><?= $page->content; ?></div>
 </article>
-<?php static::footer(); ?>
+<?= self::after(); ?>

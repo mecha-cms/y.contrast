@@ -1,10 +1,10 @@
-<?php static::header(); ?>
+<?= self::before(); ?>
 <article>
   <header>
     <h1>404</h1>
   </header>
   <div>
-    <p><?php echo To::sentence($language->_finded, ' :('); ?></p>
+    <p>:(</p>
   </div>
 </article>
-<?php static::footer(); ?>
+<?= self::after(); ?>

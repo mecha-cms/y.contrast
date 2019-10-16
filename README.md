@@ -1,5 +1,5 @@
-Contrast Shield for Mecha
-=========================
+Contrast Skin for Mecha
+=======================
 
 > Contrast is a simple blog theme with a nice clean design.
 

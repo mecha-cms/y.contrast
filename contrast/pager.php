@@ -1,10 +1,10 @@
-<?php if ($previous = $pager->previous): ?>
-<a class="gray" href="<?php echo $previous; ?>" rel="prev">&#x00AB; <?php echo $site->is('page') ? Page::open(PAGE . DS . Path::R($previous, $url, DS) . '.page')->title : $language->previous; ?></a>
+<?php if ($prev = $pager->prev): ?>
+<a class="gray" href="<?= $prev; ?>" rel="prev">&#x00AB; <?= $site->is('page') ? (new Page(PAGE . DS . Path::R(Path::F($prev, DS), $url) . '.page'))->title : $language->prev; ?></a>
 <?php else: ?>
 <span></span>
 <?php endif; ?>
 <?php if ($next = $pager->next): ?>
-<a class="gray" href="<?php echo $next; ?>" rel="next"><?php echo $site->is('page') ? Page::open(PAGE . DS . Path::R($next, $url, DS) . '.page')->title : $language->next; ?> &#x00BB;</a>
+<a class="gray" href="<?= $next; ?>" rel="next"><?= $site->is('page') ? (new Page(PAGE . DS . Path::R(Path::F($next, DS), $url) . '.page'))->title : $language->next; ?> &#x00BB;</a>
 <?php else: ?>
 <span></span>
 <?php endif; ?>
