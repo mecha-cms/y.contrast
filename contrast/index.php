@@ -41,7 +41,7 @@ if (State::get('x.panel') !== null && isset($_['path']) && $_['path'] === '/.sta
                         'dark-true' => [
                             'type' => 'Toggle',
                             'title' => "",
-                            'description' => 'Set dark mode by default. This option will give no effect if your current browser has support of CSS <em>prefers-color-scheme</em>.',
+                            'description' => 'Force dark mode. This option will give no effect if your current browser has support for CSS <em>prefers-color-scheme</em>.',
                             'name' => 'state[skin][dark]',
                             'alt' => 'Dark mode',
                             'value' => $state->skin->dark,
