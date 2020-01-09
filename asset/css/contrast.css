@@ -1,0 +1,27 @@
+/* Tweaks */
+
+.notes ol {
+  font-size: 80%;
+}
+
+.align-right {
+  float: right;
+  margin: .45em 0 .45em 1.45em;
+}
+
+.align-left {
+  float: left;
+  margin: .45em 1.45em .45em 0;
+}
+
+.align-center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+caption,
+figcaption {
+  text-align: inherit;
+  opacity: .5;
+}

@@ -9,8 +9,9 @@ return [
             ]
         ]
     ],
-    'skin' => [
+    'layout' => [
         'header' => true,
+        'icons' => true,
         'nav' => 4,
         'links' => [
             'envelope' => [
@@ -19,11 +20,11 @@ return [
             ],
             'github' => [
                 'title' => 'GitHub',
-                'link' => 'https://github.com/mecha-cms/shield.contrast'
+                'link' => 'https://github.com/mecha-cms/layout.contrast'
             ]
         ],
-        'date_format' => '%B %d, %Y',
-        'dark' => false,
-    'style' => 'default' // `contrast`, `default`, `minimal`
+        'date-format' => '%B %d, %Y',
+        'dark' => false, // Prefer dark mode by default? (applies only to web browsers that does not have support dark mode feature)
+        'style' => 'contrast' // `contrast`, `minimal`
     ]
 ];
