@@ -2,6 +2,7 @@
 <html class="<?= $state->layout->dark ? 'dark' : 'light'; ?>" dir="<?= $site->direction; ?>" lang="<?= $site->language; ?>">
   <head>
     <meta charset="<?= $site->charset; ?>">
+    <meta name="generator" content="Mecha <?= VERSION; ?>">
     <meta name="viewport" content="width=device-width">
     <?php if ($w = w($page->description ?? $site->description)): ?>
     <meta name="description" content="<?= $w; ?>">

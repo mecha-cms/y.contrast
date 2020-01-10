@@ -20,6 +20,11 @@
   text-align: center;
 }
 
+.width {
+  display: block;
+  width: 100%;
+}
+
 caption,
 figcaption {
   text-align: inherit;

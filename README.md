@@ -6,6 +6,12 @@ Contrast Layout for Mecha
 Release Notes
 -------------
 
+### 1.1.0
+
+ - Make icon’s path inline. So users can freely add their own icon links.
+ - Add icon link that redirects to Mecha CMS site.
+ - Add `<meta name="generator" content="Mecha 2.2.0">` meta tag.
+
 ### 1.0.5
 
  - Refactor for Mecha 2.2.0.
