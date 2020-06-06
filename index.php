@@ -1,16 +1,5 @@
 <?php
 
-// Wrap description data with paragraph tag(s) if needed
-Hook::set('page.description', function($description) {
-    if ($description && false === strpos($description, '</p>')) {
-        return '<p>' . strtr(trim(n($description)), [
-            "\n\n" => '</p><p>',
-            "\n" => '<br>'
-        ]) . '</p>';
-    }
-    return $description;
-});
-
 Asset::set('css/contrast.min.css', 20);
 Asset::set('css/icons.min.css', 20.1);
 Asset::set('css/contrast/' . ($state->layout->style ?: 'minimal') . '.min.css', 20.11);

@@ -4,7 +4,9 @@
     <h1>
       <?= $page->title ?: i('Posts'); ?>
     </h1>
-    <?= $page->description; ?>
+    <p>
+      <?= $page->description; ?>
+    </p>
   </header>
   <ul class="archive">
     <?php foreach ($pages as $page2): ?>

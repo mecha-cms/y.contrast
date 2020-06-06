@@ -6,11 +6,15 @@ Contrast Layout for Mecha
 Release Notes
 -------------
 
+### 1.1.1
+
+ - Removed automatic paragraph tags around page description data.
+
 ### 1.1.0
 
  - Make icon’s path inline. So users can freely add their own icon links.
- - Add icon link that redirects to Mecha CMS site.
- - Add `<meta name="generator" content="Mecha 2.2.0">` meta tag.
+ - Added icon link that redirects to Mecha CMS site.
+ - Added `<meta content="Mecha 2.2.0" name="generator">` meta tag.
 
 ### 1.0.5
 
