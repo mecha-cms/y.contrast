@@ -3,7 +3,7 @@ title: Contrast
 description: Contrast is a simple blog theme with a nice clean design.
 link: 'https://github.com/niklasbuschmann/contrast'
 author: Taufik Nurrohman
-version: 1.1.2
+version: 2.0.0
 ...
 
 ![Contrast (Light Mode)](https://user-images.githubusercontent.com/1669261/72039093-5b0a1900-32d6-11ea-895f-9cccd597e713.png)
@@ -26,7 +26,7 @@ Custom settings are available in `.\lot\layout\state.php` file.
  - To force dark mode by default, set the `layout.dark` state value to `true` (applies only to web browsers that does not have support dark mode feature).
  - Limit the maximum links displayed in site navigation by setting the `layout.nav-show` state value as numbers to describe the limit.
  - Add custom link icons in the `layout.icons` state.
- - There are two custom `layout.style` available: `contrast` and `minimal`.
+ - There are two custom `layout.skin` available: `contrast` and `minimal`.
 
 ### Embeds
 

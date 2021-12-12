@@ -40,6 +40,6 @@ return [
         ],
         'date-format' => '%B %d, %Y',
         'dark' => false, // Prefer dark mode by default? (applies only to web browsers that does not have support dark mode feature)
-        'style' => 'contrast' // `contrast`, `minimal`
+        'skin' => 'contrast' // `contrast`, `minimal`
     ]
 ];
