@@ -14,7 +14,7 @@ Release Notes
 
 ### 1.1.2
 
- - Updated.for Pager 1.3.0.
+ - Updated for Pager 1.3.0.
 
 ### 1.1.1
 
