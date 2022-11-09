@@ -1,3 +1,3 @@
 <footer>
-  <?= $site->has('parent') ? self::pager() : ""; ?>
+  <?= $pages->count && $site->is('pages') ? self::pager() : ""; ?>
 </footer>

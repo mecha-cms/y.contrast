@@ -1,3 +1,0 @@
-    <?= self::footer(); ?>
-  </body>
-</html>

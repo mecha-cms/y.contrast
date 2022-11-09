@@ -28,7 +28,7 @@
       </h1>
     </header>
     <div>
-      <p role="status">
+      <p>
         <?= i('%s does not exist.', 'Page'); ?>
       </p>
     </div>

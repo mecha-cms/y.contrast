@@ -122,26 +122,16 @@ nav a {
 
 @media (prefers-color-scheme: light) {
   html {
-    background: #fff !important;
-    color: #18191d !important;
+    background: #fff;
+    color: #18191d;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-    background: #18191d !important;
-    color: #fff !important;
+    background: #18191d;
+    color: #fff;
   }
-}
-
-.light {
-  background: #fff;
-  color: #18191d;
-}
-
-.dark {
-  background: #18191d;
-  color: #fff;
 }
 
 body > header, article, body > footer {

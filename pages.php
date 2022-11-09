@@ -9,21 +9,18 @@
         <?= $page->description; ?>
       </p>
     </header>
-    <ul class="archive">
-      <?php foreach ($pages as $page2): ?>
-        <li>
-          <time datetime="<?= $page2->time->ISO8601; ?>">
-            <?= $page2->time('%Y-%m-%d'); ?>
-          </time> <a href="<?= $page2->link ?: $page2->url; ?>"><?= $page2->title; ?></a>
-        </li>
-      <?php endforeach; ?>
-    </ul>
-    <?= $page->content; ?>
-  <?php else: ?>
-    <header>
-      <h1>
-        <?= i('Error'); ?>
-      </h1>
+    <?php if ($pages->count): ?>
+      <ul class="archive">
+        <?php foreach ($pages as $page2): ?>
+          <li>
+            <time datetime="<?= $page2->time->ISO8601; ?>">
+              <?= $page2->time('%Y-%m-%d'); ?>
+            </time> <a href="<?= $page2->link ?: $page2->url; ?>"><?= $page2->title; ?></a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+      <?= $page->content; ?>
+    <?php else: ?>
       <?php if ($site->has('part')): ?>
         <p>
           <?= i('No more %s to show.', 'pages'); ?>
@@ -33,6 +30,15 @@
           <?= i('No %s yet.', 'pages'); ?>
         </p>
       <?php endif; ?>
+    <?php endif; ?>
+  <?php else: ?>
+    <header>
+      <h1>
+        <?= i('Error'); ?>
+      </h1>
+      <p>
+        <?= i('%s does not exist.', 'Page'); ?>
+      </p>
     </header>
   <?php endif; ?>
 </article>
