@@ -3,10 +3,11 @@ title: Contrast
 description: Contrast is a simple blog theme with a nice clean design.
 image: /lot/y/contrast/index.png
 images:
-- /lot/y/constrast/index.png
-- /lot/y/constrast/index/1.png
-- /lot/y/constrast/index/2.png
-- /lot/y/constrast/index/3.png
+- /lot/y/contrast/index.png
+- /lot/y/contrast/index/1.png
+- /lot/y/contrast/index/2.png
+- /lot/y/contrast/index/3.png
+- /lot/y/contrast/index/4.png
 link: 'https://github.com/niklasbuschmann/contrast'
 author: Taufik Nurrohman
 version: 2.0.0
