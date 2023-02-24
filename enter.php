@@ -2,20 +2,20 @@
 <html class>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
     <?php if ($w = w($page->description ?? $site->description)): ?>
-      <meta name="description" content="<?= $w; ?>">
+      <meta content="<?= $w; ?>" name="description">
     <?php endif; ?>
     <?php if ('archive' === $page->x): ?>
       <!-- Prevent search engines from indexing pages with `archive` state -->
-      <meta name="robots" content="noindex">
+      <meta content="noindex" name="robots">
     <?php endif; ?>
-    <meta name="author" content="<?= $page->author; ?>">
+    <meta content="<?= eat($page->author); ?>" name="author">
     <title>
       <?= w($t->reverse->join(' - ')); ?>
     </title>
-    <link href="<?= $url; ?>/favicon.ico" rel="icon">
-    <link href="<?= $url->current(false, false); ?>" rel="canonical">
+    <link href="<?= eat($url); ?>/favicon.ico" rel="icon">
+    <link href="<?= eat($url->current(false, false)); ?>" rel="canonical">
   </head>
   <body>
     <?= self::header(); ?>

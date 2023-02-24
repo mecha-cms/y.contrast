@@ -20,7 +20,8 @@ This theme is based on a _Jekyll_ theme with the same name.
 Custom settings are available in `.\lot\y\contrast\state.php` file.
 
  - Add custom link icons in the `icons` state.
- - Limit the maximum links displayed in site navigation by setting the `nav-show` state value as numbers to describe the limit.
+ - Limit the maximum links displayed in site navigation by setting the `nav-show` state value as numbers to describe the
+   limit.
  - There are two custom `skin` available: `contrast` and `minimal`.
  - To hide the site icons, set the `icons-show` state value to `false`.
  - To hide the site navigation, set the `nav-show` state value to `false`.
@@ -28,4 +29,6 @@ Custom settings are available in `.\lot\y\contrast\state.php` file.
 
 ### Embeds
 
-You can also embed a lot of stuff, for example from _YouTube_. To scale the video to full width use the `<div class="embed"></div>` wrapper around the iframe. Use `<div class="large"></div>` wrapper to increase the width of an image or iframe.
+You can also embed a lot of stuff, for example from _YouTube_. To scale the video to full width use the
+`<div class="embed"></div>` wrapper around the iframe. Use `<div class="large"></div>` wrapper to increase the width of
+an image or iframe.

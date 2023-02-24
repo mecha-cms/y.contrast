@@ -6,7 +6,7 @@
           <?= $site->title; ?>
         </span>
       <?php else: ?>
-        <a href="<?= $url; ?>">
+        <a href="<?= eat($url); ?>">
           <?= $site->title; ?>
         </a>
       <?php endif; ?>

@@ -13,9 +13,11 @@
       <ul class="archive">
         <?php foreach ($pages as $page2): ?>
           <li>
-            <time datetime="<?= $page2->time->ISO8601; ?>">
+            <time datetime="<?= eat($page2->time->format('c')); ?>">
               <?= $page2->time('%Y-%m-%d'); ?>
-            </time> <a href="<?= $page2->link ?: $page2->url; ?>"><?= $page2->title; ?></a>
+            </time> <a href="<?= eat($page2->link ?: $page2->url); ?>">
+              <?= $page2->title; ?>
+            </a>
           </li>
         <?php endforeach; ?>
       </ul>

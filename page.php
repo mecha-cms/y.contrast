@@ -7,7 +7,7 @@
         <?= $page->title; ?>
       </h1>
       <?php if ($site->has('parent')): ?>
-        <time datetime="<?= $page->time->ISO8601; ?>">
+        <time datetime="<?= eat($page->time->format('c')); ?>">
             <?= $page->time($site->y->contrast->{'date-format'}); ?>
         </time>
       <?php endif; ?>
