@@ -1,5 +1,5 @@
 <header<?= !empty($site->y->contrast->{'title-show'}) && !empty($site->y->contrast->{'icons-show'}) ? ' class="full"' : ""; ?>>
-    <?php if (!empty($site->y->contrast->{'title-show'})): ?>
+  <?php if (!empty($site->y->contrast->{'title-show'})): ?>
     <h2 title="<?= w($site->description ?? ""); ?>">
       <?php if ($site->is('home')): ?>
         <span>

@@ -8,7 +8,7 @@
       </h1>
       <?php if ($site->has('parent')): ?>
         <time datetime="<?= eat($page->time->format('c')); ?>">
-            <?= $page->time($site->y->contrast->{'date-format'}); ?>
+          <?= $page->time($site->y->contrast->{'date-format'}); ?>
         </time>
       <?php endif; ?>
     </header>
