@@ -21,7 +21,6 @@
           </li>
         <?php endforeach; ?>
       </ul>
-      <?= $page->content; ?>
     <?php else: ?>
       <?php if ($site->has('part')): ?>
         <p>

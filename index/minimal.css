@@ -126,12 +126,18 @@ nav a {
     background: #fff;
     color: #18191d;
   }
+  [role='doc-toc'] [role='doc-pagelist'] li:last-child::after {
+    background: #fff;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     background: #18191d;
     color: #fff;
+  }
+  [role='doc-toc'] [role='doc-pagelist'] li:last-child::after {
+    background: #18191d;
   }
 }
 

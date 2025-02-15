@@ -10,7 +10,7 @@ images:
 - /lot/y/contrast/index/4.png
 link: 'https://github.com/niklasbuschmann/contrast'
 author: Taufik Nurrohman
-version: 2.0.0
+version: 2.0.1
 ...
 
 This theme is based on a _Jekyll_ theme with the same name.
