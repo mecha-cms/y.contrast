@@ -11,12 +11,13 @@
     </header>
     <?php if ($pages->count): ?>
       <ul class="archive">
-        <?php foreach ($pages as $page2): ?>
+        <?php foreach ($pages as $page): ?>
+          <?php $children = $page->children ?? false; ?>
           <li>
-            <time datetime="<?= eat($page2->time->format('c')); ?>">
-              <?= $page2->time('%Y-%m-%d'); ?>
-            </time> <a href="<?= eat($page2->link ?: $page2->url); ?>">
-              <?= $page2->title; ?>
+            <time datetime="<?= eat($page->time->format('c')); ?>">
+              <?= $page->time('%Y-%m-%d'); ?>
+            </time> <a href="<?= eat($page->link ?: ($page->url . ($children && $children->count ? '/1' : ""))); ?>">
+              <?= $page->title; ?>
             </a>
           </li>
         <?php endforeach; ?>
